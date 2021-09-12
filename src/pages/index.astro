@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import Tour from '../components/Tour.astro';
+import Country from '../components/Country.svelte';
 // You can import components from any supported Framework here!
 
 
@@ -41,6 +42,8 @@ let title = 'My Astro Site';
                 <h1>Welcome to <a href="https://astro.build/">GitKon!</a></h1>
             </div>
         </header>
+
+        <Country client:only/>
 
         <Tour />
 
